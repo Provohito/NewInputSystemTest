@@ -8,16 +8,16 @@
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "5ac506e8-9db0-4233-8c25-bca480a42527",
-                    "expectedControlType": "",
+                    "id": "2c14c12b-dac7-4cb8-ad35-863973ff08bb",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "6d3781de-c577-4c49-88d6-0aaa48f6eaad",
-                    "expectedControlType": "Button",
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "65fd08ba-eb4f-4750-8ac9-01f220ab059c",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -25,7 +25,7 @@
             "bindings": [
                 {
                     "name": "2D Vector",
-                    "id": "7af78379-3f75-4eb2-a927-64d35e976542",
+                    "id": "96e387b7-09d7-4e3f-a56e-dfe5faaf3bb3",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -36,7 +36,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "df8b4566-98f5-41e5-a542-93c51f7adb7a",
+                    "id": "28d0ef9a-37a8-4174-b658-8dc29f06f5f5",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -47,7 +47,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "d31c7d79-5267-4114-9abf-d91529406a88",
+                    "id": "c29bfab4-f446-4235-9476-e2e7f89c348b",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -58,7 +58,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "1cbe1767-5ff7-4dba-8026-b531c8ad3460",
+                    "id": "b5cb5101-8007-44ff-939c-5d7b48cf56bd",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -69,7 +69,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "879487a7-02a0-459e-9630-e10a07a662ff",
+                    "id": "b80a225d-bba0-40b9-bbae-462a1be7e9dc",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -80,23 +80,12 @@
                 },
                 {
                     "name": "",
-                    "id": "e158d3dd-3841-4c46-8825-68d15722fec4",
-                    "path": "<Mouse>/leftButton",
+                    "id": "fa044d65-9663-4d24-996c-ff949ef821e4",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "Mouse And Keyboard",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c688abda-5cc4-4581-8ee9-819e961c94a5",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Shoot",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

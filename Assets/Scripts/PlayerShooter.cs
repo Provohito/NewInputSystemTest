@@ -9,7 +9,7 @@ public class PlayerShooter : MonoBehaviour
     {
         _playerInput = new PlayerInput();
 
-        _playerInput.Player.Shoot.performed += ctx => OnShoot();
+
         _playerInput.Player.Move.performed += ctx => OnMove();
     }
 
@@ -23,10 +23,7 @@ public class PlayerShooter : MonoBehaviour
         _playerInput.Disable();
     }
 
-    public void OnShoot()
-    {
-        Debug.Log("Выстрел");
-    }
+
 
     public void OnMove()
     {
