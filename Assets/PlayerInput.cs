@@ -64,7 +64,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""id"": ""aa8429f4-2adc-4152-8ccf-f49b3ed1c120"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""MultiTap""
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -171,7 +171,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""980610a2-61c5-4026-b2a0-9399fdc3999d"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
+                    ""interactions"": ""MultiTap"",
                     ""processors"": """",
                     ""groups"": ""Mouse And Keyboard"",
                     ""action"": ""Click"",
