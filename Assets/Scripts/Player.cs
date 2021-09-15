@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class Player : MonoBehaviour
 {
@@ -28,6 +29,11 @@ public class Player : MonoBehaviour
         _input.Player.PickUp.performed += ctx => TryPickUp();
         _input.Player.Drop.performed += ctx => Throw(true);
         _input.Player.Throw.performed += ctx => Throw();
+        _input.Player.Click.performed += ctx =>
+        {
+            if (ctx.interaction is MultiTapInteraction)
+                Shoot();
+        }; // вызов события на двойной клик
 
     }
 
@@ -85,5 +91,10 @@ public class Player : MonoBehaviour
         rigitbody.isKinematic = false;
         if (!drop)
             rigitbody.AddForce(transform.forward * _throwForce,ForceMode.Impulse);
+    }
+
+    private void Shoot()
+    {
+        Debug.Log("Shoot");
     }
 }
